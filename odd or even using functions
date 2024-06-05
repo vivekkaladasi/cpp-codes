@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+bool isEven(int a){
+    if(a&1){
+        return 1;//it is odd
+    }
+    return 0; //it is even
+}
+int main(){
+    int num;
+    cin>>num;
+    if(isEven(num)){
+        cout<<"it is odd number";
+    }
+    else{
+        cout<<"it is even number";
+    }
+}
