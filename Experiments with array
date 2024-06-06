@@ -1,0 +1,31 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number[15];
+    //accessing an array
+    cout<<"value at 0 index "<<number[15]<<endl;
+  //  cout<<"value at 20 index "<<number[20]<<endl;//not possible as it does not have 20th index
+    //intitalizing an array
+    int second[3]={5,7,11};
+    //accessing an element
+    cout<<"value at 2 index "<<number[2]<<endl;
+    int third[15]={2,5,15,77};
+    cout<<"value at 12index "<<number[12]<<endl;
+    
+    cout<<endl<<"everything is fine "<<endl;
+    //printing the array
+    int n=15;
+    cout<<"printing the array "<<endl;
+    for(int i=0;i<n;i++){
+    cout<<third[i]<<" ";
+    }
+    int forth[10]={0};
+    int n=10;
+    for(int i=0;i<n;i++){
+    cout<<forth[i]<<" ";
+    }
+   
+    return 0;
+}
