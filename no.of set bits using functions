@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+  int  noOfSetBits(int num){
+      int count = 0;
+      while(num){
+          if(num&1==1){
+              count++;
+          }
+          num=num>>1;
+      }
+      return count;
+      
+  }
+  int main(){
+      int a,b;
+      cin>>a;
+      cin>>b;
+      int set_bits_of_a=noOfSetBits(a);
+      int set_bits_of_b=noOfSetBits(b);
+     
+      cout<<"sum of set bits of a and b are "<<set_bits_of_a+set_bits_of_b;;
+      return 0;
+  }
+ 
+  
