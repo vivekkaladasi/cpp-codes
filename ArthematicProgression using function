@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+void ArthematicProgression(int n){
+    int AP = (3*(n)+7);
+    cout<<AP;
+}
+int main(){
+    int n;
+    cin>>n;
+    ArthematicProgression(n); 
+    return 0;
+}
