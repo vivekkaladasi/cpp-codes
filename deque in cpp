@@ -1,0 +1,29 @@
+
+#include <iostream>
+ #include<bits/stdc++.h>
+using namespace std;
+int main() {
+    
+    deque<int>d;
+    d.push_back(1);
+    d.push_front(2);
+    cout<<"first element is "<<d.at(1)<<endl;
+ 
+    cout<<"front element is "<<d.front()<<endl;
+    
+    cout<<"back element is "<<d.back()<<endl;
+    
+    cout<<"empty or not "<<d.empty()<<endl;
+    
+    cout<<"size of d is -> "<<d.size()<<endl;
+    
+    
+    for(int i:d){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    d.pop_front();
+    for(int i:d){
+        cout<<i<<" ";
+    }
+}
