@@ -1,0 +1,29 @@
+#include <iostream>
+#include<bits/stdc++.h>
+#include<map>
+using namespace std;
+int main(){
+    map<int , string> m;
+    m[1]="vivek";
+    m[3]="valorant";
+    m[2]="vilgax";
+    m.insert({5,"villan"});
+    cout<<"before erase";
+    for(auto i:m){
+        cout<<i.first<<i.second<<" ";
+    }
+    cout<<endl;
+    cout<<"finding 13 -> "<<m.count(3)<<endl;
+     cout<<"finding 13 -> "<<m.count(-3)<<endl;
+     m.erase(3);
+     cout<<"after erase ";
+     for(auto i:m){
+         cout<<i.first<<" ";
+     }
+     auto it = m.find(2);
+     for (auto i = it;i!=m.end();i++){
+         cout<<(*i).first<<endl;
+     }
+     
+   
+}
