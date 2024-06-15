@@ -1,0 +1,19 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<stack>
+using namespace std;
+
+
+int main() {
+    stack<string>s;
+    s.push("vivek");
+    s.push("vilgax");
+    s.push("vikramsinghrathod");
+    cout<<"top element of this stack is -> "<<s.top()<<endl;
+    s.pop();
+      cout<<"top element of this stack is after pop -> "<<s.top()<<endl;
+      cout<<"size of stack is -> "s.size()<<endl;
+      cout<<"capacity of this stack is -> "s.capacity()<<endl;;
+      cout<<"empty or not "<<s.empty()<<endl;
+    return 0;
+}
